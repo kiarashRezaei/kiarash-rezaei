@@ -1,0 +1,16 @@
+title: "Kiarash Rezaei — Chalmers University of Technology"
+url: "http://localhost:4000"
+markdown: kramdown
+
+plugins:
+  - jekyll-scholar
+
+scholar:
+  source: _bibliography
+  bibliography: publications.bib
+  style: apa
+  reference_template: reference
+  locale: en
+  sort_by: year, month
+  order: descending
+  bibliography_list_tag: ol

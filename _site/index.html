@@ -1,8 +1,3 @@
----
-layout: null
-title: "Kiarash Rezaei — Chalmers University of Technology"
----
-
 <!DOCTYPE html>
 <!--
     Based on Plain-Academic by Vasilios Mavroudis (2-clause BSD)
@@ -187,29 +182,21 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
 
 <strong>Journal Articles</strong>
 <div class="pub-list bibliography">
-  {% capture bib_articles %}{% bibliography --query @article %}{% endcapture %}
-  {{ bib_articles
-      | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-      | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-      | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+  
+  <ol class="bibliography"><li><span id="electronics13214278">Cardoni, M., Pau, D. P., <strong><strong>Rezaei, K.</strong></strong>, &amp; Mura, C. (2024). Inertial Measurement Unit Self-Calibration by Quantization-Aware and Memory-Parsimonious Neural Networks. <i>Electronics</i>, <i>13</i>(21). https://doi.org/10.3390/electronics13214278</span></li></ol>
 </div>
 
 <strong>Conference Papers</strong>
 <div class="pub-list bibliography">
-  {% capture bib_inproceedings %}{% bibliography --query @inproceedings %}{% endcapture %}
-  {{ bib_inproceedings
-      | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-      | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-      | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+  
+  <ol class="bibliography"><li><span id="10761916">Cardoni, M., Pau, D. P., &amp; <strong>Rezaei, K.</strong> (2024). IMU User Transparent Tiny Neural Self-Calibration. <i>2024 IEEE 8th Forum on Research and Technologies for Society and Industry Innovation (RTSI)</i>, 619–624. https://doi.org/10.1109/RTSI61910.2024.10761916</span></li>
+<li><span id="10761917"><strong><strong>Rezaei, K.</strong></strong>, &amp; Zamani, S. (2019). An Introduction to Convolutional Neural Networks and Applications. <i>2019 4th National Conference on Contemporary Issues in Computer and Information Sciences (CICIS)</i>, 561–569.</span></li></ol>
 </div>
 
 <strong>Theses</strong>
 <div class="pub-list bibliography">
-  {% capture bib_thesis %}{% bibliography --query @thesis %}{% endcapture %}
-  {{ bib_thesis
-      | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-      | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-      | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+  
+  <ol class="bibliography"><li><span id="Rezaei2023Thesis"><strong>Rezaei, K.</strong> (2023). <i>Continuous IMU-MEMS Self-Calibration Process by Means of Tiny Neural Networks</i> [Master’s thesis, Politecnico di Milano]. https://hdl.handle.net/10589/221852</span></li></ol>
 </div>
 
 <!-- Technical Reports -->
