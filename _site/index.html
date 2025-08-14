@@ -97,6 +97,39 @@
       line-height: 1.5;
     }
 
+    /* News section styling */
+    .news-item {
+      margin-bottom: 15px;
+      padding: 12px 15px;
+      border-left: 3px solid #0b6bcb;
+      background-color: #f8f9fa;
+      border-radius: 0 5px 5px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    
+    .news-date {
+      font-weight: 600;
+      color: #0b6bcb;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      min-width: 80px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    
+    .news-content {
+      color: #374151;
+      line-height: 1.5;
+      flex: 1;
+    }
+    
+    .news-content strong {
+      color: #0f172a;
+    }
+
     /* Footer */
     .footer-note {
       color: #6b7280;
@@ -128,6 +161,7 @@
       <ul class="nav navbar-nav">
         <li><a href="#top">Home</a></li>
         <li><a href="#research">Research</a></li>
+        <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#" onclick="window.open('', '_blank').document.write('<!DOCTYPE html><html><head><title>CV Update</title></head><body><h1>CV is being updated</h1><p>Thank you for your patience. The CV will be available soon.</p></body></html>'); return false;">CV</a></li>
       </ul>
@@ -175,6 +209,57 @@
           <span class="chip">Representation Learning</span>
           <span class="chip">Robust AI/ML for Communication Systems</span>
           <span class="chip">Edge AI</span>
+        </div>
+      </div>
+
+      <!-- News Section -->
+      <div>
+        <div class="section-title" id="news">News & Updates</div>
+        <div class="news-item">
+          <div class="news-date">Feb 2025</div>
+          <div class="news-content">
+            <strong>PhD Start:</strong> I started my PhD at <a href="https://www.chalmers.se" target="_blank" rel="noopener noreferrer">Chalmers University of Technology</a>.
+          </div>
+        </div>
+        
+        <div class="news-item">
+          <div class="news-date">Oct 2024</div>
+          <div class="news-content">
+            <strong>New Role:</strong> I joined <a href="https://www.agap2.com" target="_blank" rel="noopener noreferrer">AGap2</a> as a Generative AI Engineer to contribute to the AI Factory lab's digital reporting project for <a href="https://www.rina.org" target="_blank" rel="noopener noreferrer">Rina</a>.
+          </div>
+        </div>
+        
+        <div class="news-item">
+          <div class="news-date">Oct 2024</div>
+          <div class="news-content">
+            <strong>New Publication:</strong> Our paper "Inertial Measurement Unit Self-Calibration by Quantization-Aware and Memory-Parsimonious Neural Networks" has been accepted in the <em>Electronics</em> journal.
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">Jul 2024</div>
+          <div class="news-content">
+            <strong>New Publication:</strong> Our paper, "IMU User-Transparent Tiny Neural Self-Calibration", has been accepted for presentation at the <em>IEEE RTSI</em> Conference.
+          </div>
+        </div>
+        
+        <div class="news-item">
+          <div class="news-date">Jul 2024</div>
+          <div class="news-content">
+            <strong>Master's Thesis Defense:</strong> Successfully defended with full marks my Master's thesis titled "Continuous IMU-MEMS Self-Calibration Process by Means of Tiny Neural Networks" at <a href="https://www.polimi.it/en/" target="_blank">Politecnico di Milano</a>.
+          </div>
+        </div>
+      </div>
+      
+      <div class="news-item">
+        <div class="news-date">Nov 2023</div>
+        <div class="news-content">
+          <strong>
+            Master's Thesis:
+          </strong> I joined the AI Software and Tools – System Research and Applications team at 
+            <a href="https://www.st.com" target="_blank" rel="noopener noreferrer">STMicroelectronics</a> 
+            as an AI researcher to conduct my master’s thesis on edge AI.
+          </p>
         </div>
       </div>
 
@@ -248,7 +333,7 @@
 
 <!-- Footer credit -->
 <a style="color:#b5bec9;font-size:0.8em; float:right; margin:10px 10px 20px;"
-   href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+   href="https://github.com/mavroudisv/plain-academic">Website template adopted from Plain Academic</a>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
