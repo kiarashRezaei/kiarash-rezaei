@@ -33,13 +33,15 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
     a:hover, a:focus { color: #094f95; text-decoration: none; }
 
     /* Navbar: slimmer, cleaner */
-    .navbar-inverse {
-      background-color: #0f172a; /* deep slate */
-      border: none;
-    }
+    .navbar-inverse { background-color: #0f172a; border: none; }
     .navbar-inverse .navbar-nav>li>a { color: #e5e7eb; }
+    .navbar-inverse .navbar-nav>li+a:hover,
+    .navbar-inverse .navbar-nav>li>a:focus,
     .navbar-inverse .navbar-nav>li>a:hover { color: #fff; }
     .navbar { margin-bottom: 24px; }
+
+    /* Let images scale on narrow screens */
+    img { max-width: 100%; height: auto; }
 
     /* Sidebar (name + portrait) */
     .profile-name {
@@ -51,18 +53,18 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
     }
     .affil { color: #374151; }
     .portrait-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;  /* push image to the left */
-}
-
-.portrait {
-  width: 180px;
-  height: 230px;
-  object-fit: cover;      /* keeps proportions while filling the square */
-  object-position: 10% 15%;/* center the subject */
-  border: 2px solid #e5e7eb;
-}
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;  /* push image to the left */
+    }
+    .portrait {
+      width: 100%;
+      max-width: 200px;     /* nice size on desktop */
+      aspect-ratio: 3 / 4;  /* keeps shape without fixed height */
+      object-fit: cover;
+      object-position: 10% 15%;
+      border: 2px solid #e5e7eb;
+    }
 
     /* Sections */
     .section-title {
@@ -113,7 +115,6 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       align-items: flex-start;
       gap: 20px;
     }
-    
     .news-date {
       font-weight: 600;
       color: #0b6bcb;
@@ -124,16 +125,8 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       flex-shrink: 0;
       padding-top: 2px;
     }
-    
-    .news-content {
-      color: #374151;
-      line-height: 1.5;
-      flex: 1;
-    }
-    
-    .news-content strong {
-      color: #0f172a;
-    }
+    .news-content { color: #374151; line-height: 1.5; flex: 1; }
+    .news-content strong { color: #0f172a; }
 
     /* Footer */
     .footer-note {
@@ -144,9 +137,30 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       font-size: 13px;
     }
 
-    /* Tidy up columns on small screens */
-    @media (max-width: 991px) {
-      .portrait { height: 460px; }
+    /* Small-screen improvements */   
+    @media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-md-4 {
+    order: -1; /* moves sidebar to top */
+  }
+}
+
+    /* Stack news date above content on very small screens */
+    @media (max-width: 480px) {
+      .news-item { flex-direction: column; gap: 6px; }
+      .news-date { min-width: 0; }
+    }
+
+    /* Avoid text/URL overflow on phones */
+    .bibliography li,
+    .news-content,
+    .affil,
+    dd a {
+      word-break: break-word;
+      overflow-wrap: anywhere;
     }
   </style>
 </head>
@@ -160,6 +174,7 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
       </button>
+      <!-- (No navbar-brand here; restored to your original) -->
     </div>
 
     <div class="collapse navbar-collapse" id="nav-collapse">
@@ -168,7 +183,8 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
         <li><a href="#research">Research</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#" onclick="window.open('', '_blank').document.write('<!DOCTYPE html><html><head><title>CV Update</title></head><body><h1>CV is being updated</h1><p>Thank you for your patience. The CV will be available soon.</p></body></html>'); return false;">CV</a></li>
+        <!-- Restored your original CV placeholder page behavior -->
+        <li><a href="#" onclick="window.open('', '_blank').document.write('<!DOCTYPE html><html><head><title>CV Update</title><meta name=\\'viewport\\' content=\\'width=device-width, initial-scale=1\\'></head><body style=\\'font-family:system-ui,sans-serif;padding:24px\\'><h1>CV is being updated</h1><p>Thank you for your patience. The CV will be available soon.</p></body></html>'); return false;">CV</a></li>
       </ul>
     </div>
   </div>
@@ -179,7 +195,7 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
   <div class="row">
 
     <!-- Main Column -->
-    <div class="col-md-8">
+    <div class="col-md-8 col-sm-12">
 
       <!-- HERO / ABOUT -->
       <div id="research" class="lead-para">
@@ -264,65 +280,52 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       <div class="news-item">
         <div class="news-date">Nov 2023</div>
         <div class="news-content">
-          <strong>
-            Master's Thesis:
-          </strong> I joined the AI Software and Tools – System Research and Applications team at 
-            <a href="https://www.st.com" target="_blank" rel="noopener noreferrer">STMicroelectronics</a> 
-            as an AI researcher to conduct my master’s thesis on edge AI.
-          </p>
+          <strong>Master's Thesis:</strong> I joined the AI Software and Tools – System Research and Applications team at 
+          <a href="https://www.st.com" target="_blank" rel="noopener noreferrer">STMicroelectronics</a> 
+          as an AI researcher to conduct my master’s thesis on edge AI.
         </div>
       </div>
 
       <div class="section-title" id="publications">Publications</div>
 
-<strong>Journal Articles</strong>
-<div class="pub-list bibliography">
-  {% capture bib_articles %}{% bibliography --query @article %}{% endcapture %}
-  {{ bib_articles
-      | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-      | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-      | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
-</div>
+      <strong>Journal Articles</strong>
+      <div class="pub-list bibliography">
+        {% capture bib_articles %}{% bibliography --query @article %}{% endcapture %}
+        {{ bib_articles
+            | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
+            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
+            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+      </div>
 
-<strong>Conference Papers</strong>
-<div class="pub-list bibliography">
-  {% capture bib_inproceedings %}{% bibliography --query @inproceedings %}{% endcapture %}
-  {{ bib_inproceedings
-      | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-      | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-      | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
-</div>
+      <strong>Conference Papers</strong>
+      <div class="pub-list bibliography">
+        {% capture bib_inproceedings %}{% bibliography --query @inproceedings %}{% endcapture %}
+        {{ bib_inproceedings
+            | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
+            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
+            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+      </div>
 
-<strong>Theses</strong>
-<div class="pub-list bibliography">
-  {% capture bib_thesis %}{% bibliography --query @thesis %}{% endcapture %}
-  {{ bib_thesis
-      | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-      | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-      | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
-</div>
+      <strong>Theses</strong>
+      <div class="pub-list bibliography">
+        {% capture bib_thesis %}{% bibliography --query @thesis %}{% endcapture %}
+        {{ bib_thesis
+            | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
+            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
+            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+      </div>
 
-<!-- Technical Reports -->
-<!-- Technical Reports -->
-<!-- <strong>Technical Reports</strong>
-<ul class="pub-list">
-  <li>
-    <strong>K. Rezaei</strong>,  
-    "Continuous MEMS Self-Calibration Process by Means of Tiny Neural Networks,"  
-    <em>STMicroelectronics TechWeek</em>, 2024.
-  </li>
-</ul> -->
       <div class="footer-note">
         © <span id="year"></span> Kiarash Rezaei 
       </div>
     </div>
 
     <!-- Sidebar -->
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12">
 
       <div class="portrait-wrap">
-        <!-- Keep your vertical portrait as photo.gif or replace the filename below -->
-        <img src="assets/images/photo.jpg" alt="Portrait of Kiarash Rezaei" class="portrait">
+        <!-- Keep your vertical portrait as photo.jpg -->
+        <img src="assets/images/photo.jpg" alt="Portrait of Kiarash Rezaei" class="portrait img-responsive">
       </div>
 
       <h1 class="profile-name" style="margin-top:14px;"><b>Kiarash Rezaei</b></h1>
