@@ -1,0 +1,194 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: "#top"
+      - listitem [ref=e8]:
+        - link "Research" [ref=e9] [cursor=pointer]:
+          - /url: "#research"
+      - listitem [ref=e10]:
+        - link "News" [ref=e11] [cursor=pointer]:
+          - /url: "#news"
+      - listitem [ref=e12]:
+        - link "Publications" [ref=e13] [cursor=pointer]:
+          - /url: "#publications"
+      - listitem [ref=e14]:
+        - link "CV" [ref=e15] [cursor=pointer]:
+          - /url: cv/Academic_CV_KiarashRezaei_v1.pdf
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - paragraph [ref=e20]:
+          - text: I’m a first year Ph.D. student at Chalmers University of Technology, working at the intersection of
+          - strong [ref=e21]: Trustworthy AI
+          - text: ","
+          - strong [ref=e22]: Explainable Machine Learning
+          - text: ", and"
+          - strong [ref=e23]: Communication Systems
+          - text: . My research focuses on developing robust, interpretable models for intelligent network management, with an emphasis on
+          - strong [ref=e24]: real‑world reliability
+          - text: and
+          - strong [ref=e25]: generalization
+          - text: .
+        - paragraph [ref=e26]:
+          - emphasis [ref=e27]: Current focus.
+          - text: My current research examines
+          - strong [ref=e28]: uncertainty quantification
+          - text: as a core pillar of
+          - strong [ref=e29]: trustworthy autonomous networks
+          - text: ", focusing on how systems recognise and manage uncertainty under distribution shift and how these estimates support interpretable and auditable decision processes in operational 5G/6G environments."
+        - paragraph [ref=e30]:
+          - emphasis [ref=e31]: Background.
+          - text: Previously, As an AI Researcher, I worked on
+          - strong [ref=e32]: Edge AI
+          - text: at STMicroelectronics, designing quantization‑aware, memory‑efficient neural networks implemented on Intelligent Sensor Processing Units (ISPU). I hold an
+          - strong [ref=e33]: M.Sc. in Telecommunication Engineering
+          - text: (specialization in
+          - strong [ref=e34]: signals & data analysis
+          - text: ) from Politecnico di Milano.
+      - generic [ref=e35]:
+        - generic [ref=e36]: Research Interests
+        - generic [ref=e37]:
+          - generic [ref=e38]: Trustworthy AI
+          - generic [ref=e39]: Uncertainty Quantification
+          - generic [ref=e40]: LLMs for Network Automation
+          - generic [ref=e41]: Domain Adaptation & Generalization
+          - generic [ref=e42]: Representation Learning
+          - generic [ref=e43]: Robust AI/ML for Communication Systems
+          - generic [ref=e44]: Edge AI
+      - generic [ref=e45]:
+        - generic [ref=e46]: News & Updates
+        - generic [ref=e47]:
+          - generic [ref=e48]: Dec 2025
+          - generic [ref=e49]:
+            - strong [ref=e50]: "New Publication:"
+            - text: Our paper “Policy-driven Conformal Prediction for Trustworthy QoT Estimation” has been accepted for oral presentation at
+            - emphasis [ref=e51]: OFC 2026
+            - text: .
+        - generic [ref=e52]:
+          - generic [ref=e53]: Aug 2025
+          - generic [ref=e54]:
+            - strong [ref=e55]: "New Publication:"
+            - text: "Our paper “Generative Explainability for Next-Generation Networks: LLM-Augmented XAI with Mutual Feature Interactions” has been accepted for presentation at the"
+            - emphasis [ref=e56]: GenXNet Workshop, IEEE WiMob 2025
+            - text: conference.
+        - generic [ref=e57]:
+          - generic [ref=e58]: Feb 2025
+          - generic [ref=e59]:
+            - strong [ref=e60]: "Doctoral Research:"
+            - text: I started my PhD at
+            - link "Chalmers University of Technology" [ref=e61] [cursor=pointer]:
+              - /url: https://www.chalmers.se
+            - text: .
+        - generic [ref=e62]:
+          - generic [ref=e63]: Jan 2025
+          - generic [ref=e64]:
+            - strong [ref=e65]: "Role Transition:"
+            - text: After delivering an MVP integrating LLM capabilities into the platform, I moved on to begin my PhD journey.
+        - generic [ref=e66]:
+          - generic [ref=e67]: Oct 2024
+          - generic [ref=e68]:
+            - strong [ref=e69]: "New Role:"
+            - text: I joined
+            - link "AGap2" [ref=e70] [cursor=pointer]:
+              - /url: https://www.agap2.com
+            - text: as a Generative AI Engineer to contribute to the AI Factory lab's digital reporting project for
+            - link "Rina" [ref=e71] [cursor=pointer]:
+              - /url: https://www.rina.org
+            - text: .
+        - generic [ref=e72]:
+          - generic [ref=e73]: Oct 2024
+          - generic [ref=e74]:
+            - strong [ref=e75]: "New Publication:"
+            - text: Our paper "Inertial Measurement Unit Self-Calibration by Quantization-Aware and Memory-Parsimonious Neural Networks" has been accepted in the
+            - emphasis [ref=e76]: Electronics
+            - text: journal.
+        - generic [ref=e77]:
+          - generic [ref=e78]: Jul 2024
+          - generic [ref=e79]:
+            - strong [ref=e80]: "New Publication:"
+            - text: Our paper, "IMU User-Transparent Tiny Neural Self-Calibration", has been accepted for presentation at the
+            - emphasis [ref=e81]: IEEE RTSI 2024
+            - text: conference.
+        - generic [ref=e82]:
+          - generic [ref=e83]: Jul 2024
+          - generic [ref=e84]:
+            - strong [ref=e85]: "Master's Thesis Defense:"
+            - text: Successfully defended with full marks my Master's thesis titled "Continuous IMU-MEMS Self-Calibration Process by Means of Tiny Neural Networks" at
+            - link "Politecnico di Milano" [ref=e86] [cursor=pointer]:
+              - /url: https://www.polimi.it/en/
+            - text: .
+      - generic [ref=e87]:
+        - generic [ref=e88]: Nov 2023
+        - generic [ref=e89]:
+          - strong [ref=e90]: "Master's Thesis:"
+          - text: I joined the AI Software and Tools – System Research and Applications team at
+          - link "STMicroelectronics" [ref=e91] [cursor=pointer]:
+            - /url: https://www.st.com
+          - text: as an AI researcher to conduct my master’s thesis on edge AI.
+      - generic [ref=e92]: Publications
+      - strong [ref=e93]: Journal Articles
+      - list [ref=e95]:
+        - listitem [ref=e96]:
+          - generic [ref=e97]:
+            - text: Cardoni, M., Pau, D. P.,
+            - strong [ref=e98]:
+              - strong [ref=e99]: Rezaei, K.
+            - text: ", & Mura, C. (2024). Inertial Measurement Unit Self-Calibration by Quantization-Aware and Memory-Parsimonious Neural Networks. Electronics, 13(21). https://doi.org/10.3390/electronics13214278"
+      - strong [ref=e100]: Conference Papers
+      - list [ref=e102]:
+        - listitem [ref=e103]:
+          - generic [ref=e104]:
+            - strong [ref=e105]:
+              - strong [ref=e106]: Rezaei, K.
+            - text: ", Omran, A., Monti, P., & Natalino, C. (2026). Policy-driven Conformal Prediction for Trustworthy QoT Estimation. 2026 Optical Fiber Communication Conference (OFC). https://research.chalmers.se/publication/549958/file/549958_Fulltext.pdf"
+        - listitem [ref=e107]:
+          - generic [ref=e108]:
+            - strong [ref=e109]:
+              - strong [ref=e110]: Rezaei, K.
+            - text: ", Omran, A., Troia, S., Lelli, F., Monti, P., & Natalino, C. (2025). Generative Explainability for Next-Generation Networks: Llm-Augmented Xai with Mutual Feature Interactions. 2025 21th International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob), 1–6. https://doi.org/10.1109/WiMob66857.2025.11257542"
+        - listitem [ref=e111]:
+          - generic [ref=e112]:
+            - text: Cardoni, M., Pau, D. P., &
+            - strong [ref=e113]: Rezaei, K.
+            - text: (2024). IMU User Transparent Tiny Neural Self-Calibration. 2024 IEEE 8th Forum on Research and Technologies for Society and Industry Innovation (RTSI), 619–624. https://doi.org/10.1109/RTSI61910.2024.10761916
+        - listitem [ref=e114]:
+          - generic [ref=e115]:
+            - strong [ref=e116]:
+              - strong [ref=e117]: Rezaei, K.
+            - text: ", & Zamani, S. (2019). An Introduction to Convolutional Neural Networks and Applications. 2019 4th National Conference on Contemporary Issues in Computer and Information Sciences (CICIS), 561–569."
+      - strong [ref=e118]: Theses
+      - list [ref=e120]:
+        - listitem [ref=e121]:
+          - generic [ref=e122]:
+            - strong [ref=e123]: Rezaei, K.
+            - text: (2023). Continuous IMU-MEMS Self-Calibration Process by Means of Tiny Neural Networks [Master’s thesis, Politecnico di Milano]. https://hdl.handle.net/10589/221852
+      - generic [ref=e124]: © 2026 Kiarash Rezaei
+    - generic [ref=e125]:
+      - img "Portrait of Kiarash Rezaei" [ref=e127]
+      - heading "Kiarash Rezaei" [level=1] [ref=e128]
+      - paragraph [ref=e129]:
+        - text: Ph.D. Student
+        - text: Chalmers University of Technology
+        - text: Communication, Antennas & Optical Networks
+      - paragraph [ref=e130]:
+        - link "kiarashr@chalmers.se" [ref=e132] [cursor=pointer]:
+          - /url: mailto:kiarashr@chalmers.se
+        - text: Gothenburg, Sweden
+      - generic [ref=e133]:
+        - generic [ref=e134]: Links
+        - definition [ref=e135]:
+          - link "Google Scholar" [ref=e136] [cursor=pointer]:
+            - /url: https://scholar.google.com/citations?user=FFlunEcAAAAJ&hl=en/
+        - definition [ref=e137]:
+          - link "ORCID" [ref=e138] [cursor=pointer]:
+            - /url: https://orcid.org/0009-0003-6166-2614
+        - definition [ref=e139]:
+          - link "GitHub" [ref=e140] [cursor=pointer]:
+            - /url: https://github.com/kiarashRezaei
+        - definition [ref=e141]:
+          - link "LinkedIn" [ref=e142] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/kiarash-rezaei-149b4b175/
+  - link "Website template adopted from Plain Academic" [ref=e143] [cursor=pointer]:
+    - /url: https://github.com/mavroudisv/plain-academic
