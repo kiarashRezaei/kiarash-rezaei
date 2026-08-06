@@ -199,20 +199,24 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       <!-- HERO / ABOUT -->
       <div id="research" class="lead-para">
         <p>
-          I’m a second year Ph.D. student at Chalmers University of Technology, working at the intersection of
+          I’m a first-year Ph.D. student at Chalmers University of Technology, working at the intersection of
           <strong>Trustworthy AI</strong>, <strong>Explainable Machine Learning</strong>, and
-          <strong>Communication Systems</strong>. My research focuses on developing robust, interpretable models for
-          intelligent network management, with an emphasis on <strong>real‑world reliability</strong> and
-          <strong>generalization</strong>.
+          <strong>Communication Systems</strong>. My research is driven by a central goal: enabling AI-powered network
+          management that remains <strong>reliable, interpretable, and robust</strong> in real-world 5G/6G deployments.
         </p>
         <p>
-          <em>Current focus.</em> My current research examines <strong>uncertainty quantification</strong> as a core pillar of <strong>trustworthy autonomous networks</strong>, focusing on how systems recognise and manage uncertainty under distribution shift and how these estimates support interpretable and auditable decision processes in operational 5G/6G environments.
+          <em>Current focus.</em> I investigate <strong>uncertainty quantification</strong> as a foundation for
+          <strong>trustworthy autonomous networks</strong>. Specifically, I study how learning-based systems can
+          recognise when their predictions may be unreliable, respond to distribution shifts, and communicate
+          uncertainty in ways that support transparent and auditable decision-making in operational networks.
         </p>
         <p>
-          <em>Background.</em> Previously, As an AI Researcher, I worked on <strong>Edge AI</strong> at STMicroelectronics, designing
-          quantization‑aware, memory‑efficient neural networks implemented on Intelligent Sensor Processing Units (ISPU). I hold an
-          <strong>M.Sc. in Telecommunication Engineering</strong> (specialization in <strong>signals &amp; data
-          analysis</strong>) from Politecnico di Milano.
+          <em>Background.</em> I received my <strong>M.Sc. in Telecommunication Engineering</strong>, specializing
+          in <strong>Signals and Data Analysis</strong>, from Politecnico di Milano. My master’s research at
+          STMicroelectronics focused on developing quantization-aware, memory-efficient neural networks for sensor
+          self-calibration on resource-constrained Intelligent Sensor Processing Units (ISPUs). Before joining
+          Chalmers, I held industry positions as an AI Researcher and Data Scientist, developing machine learning
+          systems ranging from resource-constrained Edge AI to generative AI solutions for industrial applications.
         </p>
       </div>
 
@@ -222,10 +226,10 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
         <div>
           <span class="chip">Trustworthy AI</span>
           <span class="chip">Uncertainty Quantification</span>
-          <span class="chip">LLMs for Network Automation</span>
+          <span class="chip">Autonomous Networks</span>
           <span class="chip">Domain Adaptation &amp; Generalization</span>
           <span class="chip">Representation Learning</span>
-          <span class="chip">Robust AI/ML for Communication Systems</span>
+          <span class="chip">Robust Machine Learning for Communication Systems</span>
           <span class="chip">Edge AI</span>
         </div>
       </div>
@@ -233,7 +237,14 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       <!-- News Section -->
       <div>
         <div class="section-title" id="news">News & Updates</div>
-        
+
+        <div class="news-item">
+          <div class="news-date">Sep 2026</div>
+          <div class="news-content">
+            <strong>New Publication:</strong> Our paper “TRACE-CRC: Trajectory-Adaptive Conformal Risk Control for Multi-Step Channel State Information Prediction” has been accepted for presentation at the <em>Symposium on Conformal and Probabilistic Prediction with Applications (COPA) 2026</em>.
+          </div>
+        </div>
+
         <div class="news-item">
           <div class="news-date">May 2026</div>
           <div class="news-content">
@@ -303,14 +314,14 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
             <strong>Master's Thesis Defense:</strong> Successfully defended with full marks my Master's thesis titled "Continuous IMU-MEMS Self-Calibration Process by Means of Tiny Neural Networks" at <a href="https://www.polimi.it/en/" target="_blank">Politecnico di Milano</a>.
           </div>
         </div>
-      </div>
-      
-      <div class="news-item">
-        <div class="news-date">Nov 2023</div>
-        <div class="news-content">
-          <strong>Master's Thesis:</strong> I joined the AI Software and Tools – System Research and Applications team at 
-          <a href="https://www.st.com" target="_blank" rel="noopener noreferrer">STMicroelectronics</a> 
-          as an AI researcher to conduct my master’s thesis on edge AI.
+
+        <div class="news-item">
+          <div class="news-date">Nov 2023</div>
+          <div class="news-content">
+            <strong>Master's Thesis:</strong> I joined the AI Software and Tools – System Research and Applications team at
+            <a href="https://www.st.com" target="_blank" rel="noopener noreferrer">STMicroelectronics</a>
+            as an AI researcher to conduct my master’s thesis on edge AI.
+          </div>
         </div>
       </div>
 
@@ -320,27 +331,24 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       <div class="pub-list bibliography">
         {% capture bib_articles %}{% bibliography --query @article %}{% endcapture %}
         {{ bib_articles
-            | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>"
+            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>" }}
       </div>
 
       <strong>Conference Papers</strong>
       <div class="pub-list bibliography">
         {% capture bib_inproceedings %}{% bibliography --query @inproceedings %}{% endcapture %}
         {{ bib_inproceedings
-            | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>"
+            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>" }}
       </div>
 
       <strong>Theses</strong>
       <div class="pub-list bibliography">
         {% capture bib_thesis %}{% bibliography --query @thesis %}{% endcapture %}
         {{ bib_thesis
-            | replace: "Rezaei, K.,", "<strong>Rezaei, K.</strong>,"
-            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>"
-            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>" }}
+            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>"
+            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>" }}
       </div>
 
       <div class="footer-note">
