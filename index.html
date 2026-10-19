@@ -1,8 +1,3 @@
----
-layout: null
-title: "Kiarash Rezaei — Chalmers University of Technology"
----
-
 <!DOCTYPE html>
 <!--
     Based on Plain-Academic by Vasilios Mavroudis (2-clause BSD)
@@ -182,8 +177,9 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
         <li><a href="#top">Home</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#news">News</a></li>
+        <li><a href="#teaching">Teaching</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="cv/Academic_CV_KiarashRezaei_v1.pdf" target="_blank">CV</a></li>
+        <li><a href="cv/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
       </ul>
     </div>
   </div>
@@ -199,24 +195,24 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       <!-- HERO / ABOUT -->
       <div id="research" class="lead-para">
         <p>
-          I’m a first-year Ph.D. student at Chalmers University of Technology, working at the intersection of
-          <strong>Trustworthy AI</strong>, <strong>Explainable Machine Learning</strong>, and
-          <strong>Communication Systems</strong>. My research is driven by a central goal: enabling AI-powered network
-          management that remains <strong>reliable, interpretable, and robust</strong> in real-world 5G/6G deployments.
+          I’m a doctoral researcher in Electrical Engineering at Chalmers University of Technology, where I am part of
+          the Communication, Antennas and Optical Networks (CAOS) Division. My research focuses on
+          <strong>trustworthy autonomous networks</strong>, with particular emphasis on uncertainty-aware learning and
+          reliable decision-making for communication systems.
         </p>
         <p>
-          <em>Current focus.</em> I investigate <strong>uncertainty quantification</strong> as a foundation for
-          <strong>trustworthy autonomous networks</strong>. Specifically, I study how learning-based systems can
-          recognise when their predictions may be unreliable, respond to distribution shifts, and communicate
-          uncertainty in ways that support transparent and auditable decision-making in operational networks.
+          <em>Current focus.</em> I develop methods for <strong>uncertainty quantification</strong>,
+          <strong>conformal prediction</strong>, and <strong>risk control</strong> in autonomous networks and O-RAN.
+          My work studies how calibrated uncertainty can support dependable decisions under distribution shift,
+          including optical quality-of-transmission estimation and multi-step channel state information prediction.
         </p>
         <p>
           <em>Background.</em> I received my <strong>M.Sc. in Telecommunication Engineering</strong>, specializing
-          in <strong>Signals and Data Analysis</strong>, from Politecnico di Milano. My master’s research at
-          STMicroelectronics focused on developing quantization-aware, memory-efficient neural networks for sensor
-          self-calibration on resource-constrained Intelligent Sensor Processing Units (ISPUs). Before joining
-          Chalmers, I held industry positions as an AI Researcher and Data Scientist, developing machine learning
-          systems ranging from resource-constrained Edge AI to generative AI solutions for industrial applications.
+          in <strong>Signals and Data Analysis</strong>, from Politecnico di Milano. At STMicroelectronics, I developed
+          quantization-aware, memory-efficient neural networks for continuous MEMS sensor self-calibration on
+          resource-constrained hardware. Before joining Chalmers, I also worked across AI research, data science, and
+          machine learning engineering roles at AGap2/RINA, DataLobster, Envision, and the PoliMi Data Science
+          Association, with projects spanning industrial generative AI, anomaly detection, computer vision, and Edge AI.
         </p>
       </div>
 
@@ -224,12 +220,14 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
       <div>
         <div class="section-title">Research Interests</div>
         <div>
-          <span class="chip">Trustworthy AI</span>
+          <span class="chip">Trustworthy Autonomous Networks</span>
+          <span class="chip">O-RAN</span>
           <span class="chip">Uncertainty Quantification</span>
-          <span class="chip">Autonomous Networks</span>
-          <span class="chip">Domain Adaptation &amp; Generalization</span>
-          <span class="chip">Representation Learning</span>
-          <span class="chip">Robust Machine Learning for Communication Systems</span>
+          <span class="chip">Conformal Prediction &amp; Risk Control</span>
+          <span class="chip">Distribution Shift</span>
+          <span class="chip">Optical Network AI</span>
+          <span class="chip">Multi-Step CSI Prediction</span>
+          <span class="chip">Explainable AI</span>
           <span class="chip">Edge AI</span>
         </div>
       </div>
@@ -241,7 +239,7 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
         <div class="news-item">
           <div class="news-date">Sep 2026</div>
           <div class="news-content">
-            <strong>New Publication:</strong> Our paper “TRACE-CRC: Trajectory-Adaptive Conformal Risk Control for Multi-Step Channel State Information Prediction” has been accepted for presentation at the <em>Symposium on Conformal and Probabilistic Prediction with Applications (COPA) 2026</em>.
+            <strong>New Publication:</strong> “TRACE-CRC: Trajectory-Adaptive Conformal Risk Control for Multi-Step Channel State Information Prediction” was published in <em>Proceedings of Machine Learning Research</em>, volume 329, following its presentation at COPA 2026. <a href="https://proceedings.mlr.press/v329/rezaei26a.html" target="_blank" rel="noopener noreferrer">Paper</a> · <a href="https://github.com/kiarashRezaei/trace-crc" target="_blank" rel="noopener noreferrer">Code</a>
           </div>
         </div>
 
@@ -325,30 +323,88 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
         </div>
       </div>
 
+      <div class="section-title" id="teaching">Teaching &amp; Supervision</div>
+      <div class="lead-para">
+        <p>
+          I am a teaching assistant for <strong>Applied Object-Oriented Programming</strong> (EEN060/EEN065) at
+          Chalmers, where I design examinations and lead Python exercise and laboratory sessions. In 2026, I
+          supervised the completed bachelor’s thesis <em>Autonomous Knowledge Agent: From Query to Report without
+          Human Guidance</em>.
+        </p>
+      </div>
+
       <div class="section-title" id="publications">Publications</div>
 
       <strong>Journal Articles</strong>
       <div class="pub-list bibliography">
-        {% capture bib_articles %}{% bibliography --query @article %}{% endcapture %}
-        {{ bib_articles
-            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>"
-            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>" }}
+        <ol class="bibliography">
+          <li>
+            Cardoni, M., Pau, D. P., <strong>Rezaei, K.</strong>, &amp; Mura, C. (2024).
+            Inertial Measurement Unit Self-Calibration by Quantization-Aware and Memory-Parsimonious Neural Networks.
+            <em>Electronics, 13</em>(21), 4278.
+            <a href="https://doi.org/10.3390/electronics13214278" target="_blank" rel="noopener noreferrer">DOI</a>
+          </li>
+        </ol>
       </div>
 
       <strong>Conference Papers</strong>
       <div class="pub-list bibliography">
-        {% capture bib_inproceedings %}{% bibliography --query @inproceedings %}{% endcapture %}
-        {{ bib_inproceedings
-            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>"
-            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>" }}
+        <ol class="bibliography">
+          <li>
+            <strong>Rezaei, K.</strong>, Sattari, M., Aliakbari, J., Svensson, T., Monti, P., &amp; Natalino, C. (2026).
+            TRACE-CRC: Trajectory-Adaptive Conformal Risk Control for Multi-Step Channel State Information Prediction.
+            <em>15th Symposium on Conformal and Probabilistic Prediction with Applications (COPA), PMLR 329</em>, 984–1009.
+            <a href="https://proceedings.mlr.press/v329/rezaei26a.html" target="_blank" rel="noopener noreferrer">Paper</a> ·
+            <a href="https://github.com/kiarashRezaei/trace-crc" target="_blank" rel="noopener noreferrer">Code</a>
+          </li>
+          <li>
+            <strong>Rezaei, K.</strong>, Ayoub, O., Monti, P., &amp; Natalino, C. (2026).
+            Human-Grounded Evaluation of Large Language Models for Optical Network Automation.
+            <em>26th International Conference on Transparent Optical Networks (ICTON)</em>, 1–6. Invited paper.
+            <a href="https://doi.org/10.1109/ICTON71309.2026.11704905" target="_blank" rel="noopener noreferrer">DOI</a>
+          </li>
+          <li>
+            <strong>Rezaei, K.</strong>, Ayoub, O., Natalino, C., &amp; Monti, P. (2026).
+            Bridging the Trust Gap in AI-Driven Optical Networks with Structured Explainability.
+            <em>Opto-Electronics and Communications Conference (OECC)</em>. Invited paper.
+            <a href="https://research.chalmers.se/en/publication/552368" target="_blank" rel="noopener noreferrer">Record</a>
+          </li>
+          <li>
+            <strong>Rezaei, K.</strong>, Ayoub, O., Monti, P., &amp; Natalino, C. (2026).
+            Policy-Driven Conformal Prediction for Trustworthy QoT Estimation.
+            <em>Optical Fiber Communication Conference (OFC)</em>.
+            <a href="https://doi.org/10.1364/OFC.2026.M4A.3" target="_blank" rel="noopener noreferrer">DOI</a>
+          </li>
+          <li>
+            <strong>Rezaei, K.</strong>, Ayoub, O., Troia, S., Lelli, F., Monti, P., &amp; Natalino, C. (2025).
+            Generative Explainability for Next-Generation Networks: LLM-Augmented XAI with Mutual Feature Interactions.
+            <em>GenXNet Workshop, IEEE WiMob</em>, 1–6.
+            <a href="https://doi.org/10.1109/WiMob66857.2025.11257542" target="_blank" rel="noopener noreferrer">DOI</a>
+          </li>
+          <li>
+            Cardoni, M., Pau, D. P., &amp; <strong>Rezaei, K.</strong> (2024).
+            IMU User Transparent Tiny Neural Self-Calibration.
+            <em>IEEE Forum on Research and Technologies for Society and Industry Innovation (RTSI)</em>, 619–624.
+            <a href="https://doi.org/10.1109/RTSI61910.2024.10761916" target="_blank" rel="noopener noreferrer">DOI</a>
+          </li>
+          <li>
+            <strong>Rezaei, K.</strong>, &amp; Zamani, S. (2019).
+            An Introduction to Convolutional Neural Networks &amp; Applications.
+            <em>National Conference on Contemporary Issues in Computer and Information Sciences (CICIS)</em>, 561–569.
+          </li>
+        </ol>
       </div>
 
       <strong>Theses</strong>
       <div class="pub-list bibliography">
-        {% capture bib_thesis %}{% bibliography --query @thesis %}{% endcapture %}
-        {{ bib_thesis
-            | replace: "Rezaei, Kiarash", "<strong>Rezaei, Kiarash</strong>"
-            | replace: "Rezaei, K.", "<strong>Rezaei, K.</strong>" }}
+        <ol class="bibliography">
+          <li>
+            <strong>Rezaei, K.</strong> (2024).
+            <em>Continuous IMU-MEMS Self-Calibration Process by Means of Tiny Neural Networks</em>
+            [Master’s thesis, Politecnico di Milano].
+            <a href="https://hdl.handle.net/10589/221852" target="_blank" rel="noopener noreferrer">Thesis</a>
+          </li>
+        </ol>
       </div>
 
       <div class="footer-note">
@@ -366,7 +422,7 @@ title: "Kiarash Rezaei — Chalmers University of Technology"
 
       <h1 class="profile-name" style="margin-top:14px;"><b>Kiarash Rezaei</b></h1>
       <p class="affil">
-        Ph.D. Student<br>
+        Doctoral Researcher<br>
         Chalmers University of Technology<br>
         Communication, Antennas &amp; Optical Networks
       </p>
